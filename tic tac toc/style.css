@@ -1,0 +1,29 @@
+#tic-tac-toe-board {
+    width: 330px;
+    height: 330px;
+    margin: 0 auto;
+}
+.cell {
+    height: 100px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    background: #9252f9;
+    transition: background 0.2s;
+}
+.cell:disabled {
+    background: #f5fc7b;
+    color: #1d0202;
+}
+@media (max-width: 500px) {
+    #tic-tac-toe-board {
+        width: 90vw;
+        height: 90vw;
+    }
+    .cell {
+        height: 20vw;
+        font-size: 2rem;
+    }
+} 
